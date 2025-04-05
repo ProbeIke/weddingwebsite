@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/weddingwebsite/static/css/main.43e4fc85.css",
-    "main.js": "/weddingwebsite/static/js/main.fae4b16e.js",
+    "main.css": "/weddingwebsite/static/css/main.85f38af4.css",
+    "main.js": "/weddingwebsite/static/js/main.1e91f82e.js",
     "static/js/453.24da6005.chunk.js": "/weddingwebsite/static/js/453.24da6005.chunk.js",
+    "static/media/mediumflowers.png": "/weddingwebsite/static/media/mediumflowers.d77cf16a6058ff3a53ef.png",
+    "static/media/bigflowers.png": "/weddingwebsite/static/media/bigflowers.354227cbd0c0f2b40578.png",
     "static/media/bridgerton.jpg": "/weddingwebsite/static/media/bridgerton.4ec976f7041ae327534e.jpg",
-    "static/media/halloween.jpg": "/weddingwebsite/static/media/halloween.fa70d6036e7904fd8884.jpg",
+    "static/media/brazil.jpg": "/weddingwebsite/static/media/brazil.af0d780ed1e8aa5051e9.jpg",
+    "static/media/roses.png": "/weddingwebsite/static/media/roses.9eb5472e4a03d67b4587.png",
+    "static/media/flower1.png": "/weddingwebsite/static/media/flower1.c154699139889b29322d.png",
+    "static/media/proposal_2.jpg": "/weddingwebsite/static/media/proposal_2.f64c251fa0807f3b74b5.jpg",
+    "static/media/proposal_3.jpg": "/weddingwebsite/static/media/proposal_3.8c4d40128172c4cd0b3f.jpg",
     "index.html": "/weddingwebsite/index.html",
-    "main.43e4fc85.css.map": "/weddingwebsite/static/css/main.43e4fc85.css.map",
-    "main.fae4b16e.js.map": "/weddingwebsite/static/js/main.fae4b16e.js.map",
+    "main.85f38af4.css.map": "/weddingwebsite/static/css/main.85f38af4.css.map",
+    "main.1e91f82e.js.map": "/weddingwebsite/static/js/main.1e91f82e.js.map",
     "453.24da6005.chunk.js.map": "/weddingwebsite/static/js/453.24da6005.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43e4fc85.css",
-    "static/js/main.fae4b16e.js"
+    "static/css/main.85f38af4.css",
+    "static/js/main.1e91f82e.js"
   ]
 }
