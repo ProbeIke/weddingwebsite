@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/weddingwebsite/static/css/main.43e4fc85.css",
+    "main.js": "/weddingwebsite/static/js/main.fae4b16e.js",
+    "static/js/453.24da6005.chunk.js": "/weddingwebsite/static/js/453.24da6005.chunk.js",
+    "static/media/bridgerton.jpg": "/weddingwebsite/static/media/bridgerton.4ec976f7041ae327534e.jpg",
+    "static/media/halloween.jpg": "/weddingwebsite/static/media/halloween.fa70d6036e7904fd8884.jpg",
+    "index.html": "/weddingwebsite/index.html",
+    "main.43e4fc85.css.map": "/weddingwebsite/static/css/main.43e4fc85.css.map",
+    "main.fae4b16e.js.map": "/weddingwebsite/static/js/main.fae4b16e.js.map",
+    "453.24da6005.chunk.js.map": "/weddingwebsite/static/js/453.24da6005.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43e4fc85.css",
+    "static/js/main.fae4b16e.js"
+  ]
+}
