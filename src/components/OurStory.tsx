@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './OurStory.css';
 import bridgertonImage from '../assets/images/bridgerton.jpg';
-import halloweenImage from '../assets/images/halloween.jpg';
+import proposal2 from '../assets/images/proposal_2.jpg';
+import brazilpic from '../assets/images/brazil.jpg';
 
 interface TimelineEvent {
   title: string;
@@ -16,13 +17,13 @@ const OurStory: React.FC = () => {
       title: 'How We Met',
       date: 'March 2023',
       description: 'Gym rizz.',
-      image: bridgertonImage
+      image: brazilpic
     },
     {
       title: 'Something important!',
       date: 'August 2023',
       description: 'If you didn\'t register it by now, I don\'t have many of pictures of the two of y\'all.',
-      image: halloweenImage
+      image: proposal2
     },
     {
       title: 'The Proposal',
