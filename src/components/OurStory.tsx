@@ -66,6 +66,8 @@ const OurStory: React.FC = () => {
 
   return (
     <section className="our-story" id="our-story">
+      <div className="flower-decoration flower-top-left"></div>
+      <div className="flower-decoration flower-bottom-right"></div>
       <h2 className="section-title">Our Story</h2>
       <div className="timeline">
         {timelineEvents.map((event, index) => (

@@ -8,6 +8,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.hero-flower {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.hero-flower-tl {
+  top: 20px;
+  left: 20px;
+  background-image: url('../assets/images/flower1.png');
+}
+
+.hero-flower-tr {
+  top: 20px;
+  right: 20px;
+  background-image: url('../assets/images/roses.png');
+  transform: rotate(45deg);
+}
+
+.hero-flower-bl {
+  bottom: 20px;
+  left: 20px;
+  background-image: url('../assets/images/roses.png');
+  transform: rotate(-45deg);
+}
+
+.hero-flower-br {
+  bottom: 20px;
+  right: 20px;
+  background-image: url('../assets/images/flower1.png');
+  transform: scaleX(-1);
 }
 
 .hero-overlay {

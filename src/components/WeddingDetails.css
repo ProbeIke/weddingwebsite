@@ -1,6 +1,40 @@
 .wedding-details {
   padding: 5rem 2rem;
   background-color: #fff;
+  position: relative;
+}
+
+.flower-border {
+  height: 40px;
+  background-image: url('../assets/images/roses.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  margin: 0 auto 2rem;
+  max-width: 80%;
+  opacity: 0.8;
+}
+
+.flower-accent {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: url('../assets/images/bigflowers.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.flower-accent-1 {
+  top: 100px;
+  left: 5%;
+  transform: rotate(-15deg);
+}
+
+.flower-accent-2 {
+  bottom: 100px;
+  right: 5%;
+  transform: rotate(15deg);
 }
 
 .details-container {

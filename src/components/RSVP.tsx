@@ -104,6 +104,8 @@ const RSVP: React.FC = () => {
 
   return (
     <section className="rsvp" id="rsvp">
+      <div className="rsvp-flower rsvp-flower-left"></div>
+      <div className="rsvp-flower rsvp-flower-right"></div>
       <h2 className="section-title">RSVP</h2>
       <div className="rsvp-container">
         {!submitted ? (
