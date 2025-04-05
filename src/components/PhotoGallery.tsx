@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import './PhotoGallery.css';
 
 // In a real application, these would be actual imported images
@@ -21,12 +21,12 @@ const PhotoGallery: React.FC = () => {
     document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setSelectedImage(null);
     document.body.style.overflow = 'auto'; // Re-enable scrolling
-  };
+  }, []);
 
-  const navigateImage = (direction: 'prev' | 'next') => {
+  const navigateImage = useCallback((direction: 'prev' | 'next') => {
     if (selectedImage === null) return;
     
     const currentIndex = placeholderImages.findIndex(img => img.id === selectedImage);
@@ -39,10 +39,10 @@ const PhotoGallery: React.FC = () => {
     }
     
     setSelectedImage(placeholderImages[newIndex].id);
-  };
+  }, [selectedImage]);
 
   // Handle keyboard navigation
-  React.useEffect(() => {
+  useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (selectedImage === null) return;
       
