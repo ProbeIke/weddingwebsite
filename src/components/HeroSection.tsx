@@ -12,10 +12,6 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-flower hero-flower-tl"></div>
-      <div className="hero-flower hero-flower-tr"></div>
-      <div className="hero-flower hero-flower-bl"></div>
-      <div className="hero-flower hero-flower-br"></div>
       <div className="hero-overlay">
         <h1 className="hero-title">Shane & Julia</h1>
         <p className="hero-date">August 15, 2026</p>

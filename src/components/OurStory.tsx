@@ -66,8 +66,6 @@ const OurStory: React.FC = () => {
 
   return (
     <section className="our-story" id="our-story">
-      <div className="flower-decoration flower-top-left"></div>
-      <div className="flower-decoration flower-bottom-right"></div>
       <h2 className="section-title">Our Story</h2>
       <div className="timeline">
         {timelineEvents.map((event, index) => (
@@ -79,6 +77,7 @@ const OurStory: React.FC = () => {
               return undefined;
             }}
           >
+          <div className="timeline-content-wrapper">
             <div 
               className="timeline-content"
               style={{ 
@@ -88,12 +87,13 @@ const OurStory: React.FC = () => {
               <div className="image-container">
                 <img src={event.image} alt={event.title} />
               </div>
-              <div className="text-overlay">
-                <h3>{event.title}</h3>
-                <p className="date">{event.date}</p>
-                <p>{event.description}</p>
-              </div>
             </div>
+            <div className="text-content">
+              <h3>{event.title}</h3>
+              <p className="date">{event.date}</p>
+              <p>{event.description}</p>
+            </div>
+          </div>
           </div>
         ))}
       </div>
