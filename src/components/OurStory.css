@@ -114,23 +114,7 @@
   transform: scale(1.05);
 }
 
-/* Create arrows for timeline events */
-.timeline-content::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -10px;
-  background-color: white;
-  border: 4px solid #ddd;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-event.right .timeline-content::after {
-  left: -10px;
-}
+/* Circles on timeline events removed as requested */
 
 @media screen and (max-width: 768px) {
   .timeline::after {
@@ -147,7 +131,5 @@
     left: 0;
   }
   
-  .timeline-content::after {
-    left: -10px;
-  }
+  /* Mobile circle positioning removed */
 }
