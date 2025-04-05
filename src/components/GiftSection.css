@@ -1,0 +1,100 @@
+.gift-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.gift-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gift-message {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gift-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.gift-option {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gift-option h3 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.gift-option p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.gift-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.gift-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.gift-list li:last-child {
+  border-bottom: none;
+}
+
+.gift-button {
+  background-color: #6b8e23;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gift-button:hover {
+  background-color: #556b2f;
+}
+
+.gift-note {
+  text-align: center;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .gift-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gift-option {
+    width: 100%;
+  }
+}

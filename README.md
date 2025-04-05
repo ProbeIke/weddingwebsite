@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +45,46 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+# Shane & Julia's Wedding Website
+
+A beautiful, responsive wedding website built with React and TypeScript.
+
+## Features
+
+- 🌸 **Hero Section**: Full-width hero image with the couple's names and wedding date
+- 🕊️ **Our Story**: Timeline of the couple's journey together
+- 📍 **Wedding Details**: Information about the ceremony and reception
+- 📸 **Photo Gallery**: Grid layout with lightbox functionality
+- 📅 **RSVP**: Form for guests to RSVP with local storage
+- 🎁 **Gift Section**: Information about gifts and registry
+- 🕰️ **Countdown Timer**: Live countdown to the wedding day
+- 📜 **Footer**: Contact information and navigation links
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+## Technologies Used
+
+- React
+- TypeScript
+- CSS
+- Local Storage for RSVP data
+
+## Project Structure
+
+- `src/components/`: Contains all the React components
+- `src/assets/images/`: Contains placeholder images (in a real project, these would be actual images)
+
+## Customization
+
+To customize this website for your own wedding:
+1. Replace placeholder images with your own photos
+2. Update text content in each component
+3. Adjust colors and styling in CSS files
+4. Modify the wedding date in the CountdownTimer component
+>>>>>>> 1513a2b (Initial website creation)

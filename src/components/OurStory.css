@@ -1,0 +1,128 @@
+.our-story {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-event {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-event.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-event.left {
+  left: 0;
+}
+
+.timeline-event.right {
+  left: 50%;
+}
+
+.timeline-content {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #333;
+  margin-top: 0;
+}
+
+.timeline-content .date {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Create arrows for timeline events */
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: white;
+  border: 4px solid #ddd;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-event.right .timeline-content::after {
+  left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-event {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline-event.right {
+    left: 0;
+  }
+  
+  .timeline-content::after {
+    left: -10px;
+  }
+}
