@@ -79,13 +79,20 @@ const OurStory: React.FC = () => {
               return undefined;
             }}
           >
-            <div className="timeline-content">
-              <h3>{event.title}</h3>
-              <p className="date">{event.date}</p>
+            <div 
+              className="timeline-content"
+              style={{ 
+                '--background-image': `url(${event.image})` 
+              } as React.CSSProperties}
+            >
               <div className="image-container">
                 <img src={event.image} alt={event.title} />
               </div>
-              <p>{event.description}</p>
+              <div className="text-overlay">
+                <h3>{event.title}</h3>
+                <p className="date">{event.date}</p>
+                <p>{event.description}</p>
+              </div>
             </div>
           </div>
         ))}
