@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './OurStory.css';
-import meetingImage from '../assets/images/meeting.jpg';
-import tripImage from '../assets/images/trip.jpg';
-import proposalImage from '../assets/images/proposal.jpg';
+import bridgertonImage from '../assets/images/bridgerton.jpg';
+import halloweenImage from '../assets/images/halloween.jpg';
 
 interface TimelineEvent {
   title: string;
@@ -15,21 +14,21 @@ const OurStory: React.FC = () => {
   const timelineEvents: TimelineEvent[] = [
     {
       title: 'How We Met',
-      date: 'June 2020',
-      description: 'We met at a mutual friend\'s birthday party. Shane spilled his drink on Julia\'s dress, and the rest is history.',
-      image: meetingImage
+      date: 'March 2023',
+      description: 'Gym rizz.',
+      image: bridgertonImage
     },
     {
-      title: 'Our First Trip',
-      date: 'August 2021',
-      description: 'We took our first trip together to the mountains. It was during this trip that we realized we were meant for each other.',
-      image: tripImage
+      title: 'Something important!',
+      date: 'August 2023',
+      description: 'If you didn\'t register it by now, I don\'t have many of pictures of the two of y\'all.',
+      image: halloweenImage
     },
     {
       title: 'The Proposal',
-      date: 'December 2024',
-      description: 'Shane proposed during a sunset walk on the beach. Julia said yes before he could even finish asking!',
-      image: proposalImage
+      date: 'March 2024',
+      description: 'Da jefferson memorial!',
+      image: bridgertonImage
     }
   ];
 
