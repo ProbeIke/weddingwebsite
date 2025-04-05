@@ -36,7 +36,7 @@
 .countdown-value {
   font-size: 3rem;
   font-weight: bold;
-  color: #6b8e23;
+  color: #9ACCE8;
   background-color: white;
   width: 80px;
   height: 80px;
@@ -46,6 +46,11 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.5rem;
+}
+
+/* Make the days element wider to accommodate larger numbers */
+.countdown-item:first-child .countdown-value {
+  width: 100px;
 }
 
 .countdown-label {
@@ -73,6 +78,10 @@
     height: 60px;
   }
   
+  .countdown-item:first-child .countdown-value {
+    width: 75px;
+  }
+  
   .countdown-label {
     font-size: 0.8rem;
   }
@@ -87,5 +96,9 @@
     font-size: 1.5rem;
     width: 50px;
     height: 50px;
+  }
+  
+  .countdown-item:first-child .countdown-value {
+    width: 65px;
   }
 }

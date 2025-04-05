@@ -66,8 +66,8 @@
 }
 
 .gift-button {
-  background-color: #6b8e23;
-  color: white;
+  background-color: #C3E6F5;
+  color: #333;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -78,7 +78,7 @@
 }
 
 .gift-button:hover {
-  background-color: #556b2f;
+  background-color: #9ACCE8;
 }
 
 .gift-note {

@@ -10,21 +10,21 @@ const WeddingDetails: React.FC = () => {
       <div className="details-container">
         <div className="detail-card ceremony">
           <h3>Ceremony</h3>
-          <p className="detail-time">April 15, 2025 • 3:00 PM</p>
-          <p className="detail-location">St. Mary's Cathedral</p>
-          <p className="detail-address">123 Church Street, New York, NY</p>
+          <p className="detail-time">August 15, 2025 • 3:00 PM</p>
+          <p className="detail-location">Northrop Grumman Mission Systems</p>
+          <p className="detail-address">Linthicum, Maryland</p>
           <p className="detail-info">
-            The ceremony will begin promptly at 3:00 PM. Please arrive at least 30 minutes early to be seated.
+            No cell phones, apple watches, airpods, allowed!!! No wedding photographer either or bluetooth devices
           </p>
         </div>
         
         <div className="detail-card reception">
           <h3>Reception</h3>
-          <p className="detail-time">April 15, 2025 • 5:30 PM</p>
-          <p className="detail-location">The Grand Ballroom</p>
-          <p className="detail-address">456 Celebration Avenue, New York, NY</p>
+          <p className="detail-time">August 15, 2025 • 5:30 PM</p>
+          <p className="detail-location">ARPA-E Headquarters</p>
+          <p className="detail-address">Lenfant Plaza</p>
           <p className="detail-info">
-            Cocktail hour begins at 5:30 PM, followed by dinner and dancing until midnight.
+            Ya'll are about to find out why they call it BOOZE allen.
           </p>
         </div>
       </div>

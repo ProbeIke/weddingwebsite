@@ -89,11 +89,11 @@
 }
 
 .ceremony {
-  background-color: #f9f3f3;
+  background-color: #E0E0F5;
 }
 
 .reception {
-  background-color: #f3f9f3;
+  background-color: #C3E6F5;
 }
 
 .directions-section {
@@ -120,8 +120,8 @@
 .download-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #6b8e23;
-  color: white;
+  background-color: #C3E6F5;
+  color: #333;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
@@ -129,7 +129,7 @@
 }
 
 .download-button:hover {
-  background-color: #556b2f;
+  background-color: #9ACCE8;
 }
 
 @media (max-width: 768px) {

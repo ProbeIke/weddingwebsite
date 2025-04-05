@@ -68,8 +68,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #6b8e23;
-  box-shadow: 0 0 0 2px rgba(107, 142, 35, 0.2);
+  border-color: #C3E6F5;
+  box-shadow: 0 0 0 2px rgba(195, 230, 245, 0.4);
 }
 
 .form-group input.error,
@@ -85,8 +85,8 @@
 
 .rsvp-button,
 .reset-button {
-  background-color: #6b8e23;
-  color: white;
+  background-color: #C3E6F5;
+  color: #333;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -100,7 +100,7 @@
 
 .rsvp-button:hover,
 .reset-button:hover {
-  background-color: #556b2f;
+  background-color: #9ACCE8;
 }
 
 .thank-you {
@@ -111,7 +111,7 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #6b8e23;
+  color: #9ACCE8;
 }
 
 .thank-you p {

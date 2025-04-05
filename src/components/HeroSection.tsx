@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
       <div className="hero-flower hero-flower-br"></div>
       <div className="hero-overlay">
         <h1 className="hero-title">Shane & Julia</h1>
-        <p className="hero-date">April 15, 2025</p>
+        <p className="hero-date">August 15, 2026</p>
         <button className="hero-button" onClick={scrollToDetails}>
           Scroll to Details
         </button>

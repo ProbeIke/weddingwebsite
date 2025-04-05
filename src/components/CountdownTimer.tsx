@@ -10,7 +10,7 @@ interface TimeLeft {
 
 const CountdownTimer: React.FC = () => {
   // Set the wedding date - April 15, 2025
-  const weddingDate = new Date('April 15, 2025 15:00:00').getTime();
+  const weddingDate = new Date('August 15, 2026 15:00:00').getTime();
   
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
