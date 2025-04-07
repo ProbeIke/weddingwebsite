@@ -17,7 +17,7 @@ const GiftSection: React.FC = () => {
           <div className="gift-option">
             <h3>Honeymoon Fund</h3>
             <p>
-              We're planning our dream honeymoon to Bali! If you'd like to contribute to our adventure, 
+              We're planning our dream honeymoon to San Diego Comic Con! If you'd like to contribute to our adventure, 
               cash gifts can be given at the reception or through the "Send a Gift" button below.
             </p>
             <button className="gift-button" onClick={() => alert('In a real website, this would link to a payment platform.')}>
@@ -32,10 +32,10 @@ const GiftSection: React.FC = () => {
               Please don't feel obligated - your presence is enough!
             </p>
             <ul className="gift-list">
-              <li>Kitchen appliances</li>
-              <li>Bedding and towels</li>
-              <li>Dining essentials</li>
-              <li>Home decor</li>
+              <li>Nintendo Switch 2</li>
+              <li>Snail Mucin</li>
+              <li>Marques Brownlee</li>
+              <li>Frisbees</li>
             </ul>
             <button className="gift-button" onClick={() => alert('In a real website, this would link to a registry.')}>
               View Registry
