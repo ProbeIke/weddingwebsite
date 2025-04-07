@@ -1,19 +1,29 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import './PhotoGallery.css';
+import proposal1 from '../assets/images/proposal_1.jpg';
+import proposal2 from '../assets/images/proposal_2.jpg';
+import proposal3 from '../assets/images/proposal_3.jpg';
+import bridgertonImage from '../assets/images/bridgerton.jpg';
+import brazilImage from '../assets/images/brazil.jpg';
+import halloweenImage from '../assets/images/halloween.jpg';
 
-// In a real application, these would be actual imported images
-const placeholderImages = [
-  { id: 1, src: 'https://via.placeholder.com/400x300?text=Photo+1', alt: 'Couple Photo 1' },
-  { id: 2, src: 'https://via.placeholder.com/400x300?text=Photo+2', alt: 'Couple Photo 2' },
-  { id: 3, src: 'https://via.placeholder.com/400x300?text=Photo+3', alt: 'Couple Photo 3' },
-  { id: 4, src: 'https://via.placeholder.com/400x300?text=Photo+4', alt: 'Couple Photo 4' },
-  { id: 5, src: 'https://via.placeholder.com/400x300?text=Photo+5', alt: 'Couple Photo 5' },
-  { id: 6, src: 'https://via.placeholder.com/400x300?text=Photo+6', alt: 'Couple Photo 6' },
-  { id: 7, src: 'https://via.placeholder.com/400x300?text=Photo+7', alt: 'Couple Photo 7' },
-  { id: 8, src: 'https://via.placeholder.com/400x300?text=Photo+8', alt: 'Couple Photo 8' },
+interface GalleryImage {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+const galleryImages: GalleryImage[] = [
+  { id: 1, src: proposal1, alt: 'Proposal Photo 1' },
+  { id: 2, src: proposal2, alt: 'Proposal Photo 2' },
+  { id: 3, src: proposal3, alt: 'Proposal Photo 3' },
+  { id: 4, src: bridgertonImage, alt: 'Bridgerton Themed Photo' },
+  { id: 5, src: brazilImage, alt: 'Brazil Trip' },
+  { id: 6, src: halloweenImage, alt: 'Halloween Together' },
 ];
 
 const PhotoGallery: React.FC = () => {
+  const galleryRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const openLightbox = (id: number) => {
@@ -29,16 +39,16 @@ const PhotoGallery: React.FC = () => {
   const navigateImage = useCallback((direction: 'prev' | 'next') => {
     if (selectedImage === null) return;
     
-    const currentIndex = placeholderImages.findIndex(img => img.id === selectedImage);
+    const currentIndex = galleryImages.findIndex(img => img.id === selectedImage);
     let newIndex;
     
     if (direction === 'prev') {
-      newIndex = currentIndex > 0 ? currentIndex - 1 : placeholderImages.length - 1;
+      newIndex = currentIndex > 0 ? currentIndex - 1 : galleryImages.length - 1;
     } else {
-      newIndex = currentIndex < placeholderImages.length - 1 ? currentIndex + 1 : 0;
+      newIndex = currentIndex < galleryImages.length - 1 ? currentIndex + 1 : 0;
     }
     
-    setSelectedImage(placeholderImages[newIndex].id);
+    setSelectedImage(galleryImages[newIndex].id);
   }, [selectedImage]);
 
   // Handle keyboard navigation
@@ -65,17 +75,59 @@ const PhotoGallery: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedImage, navigateImage, closeLightbox]);
 
-  const selectedImageData = selectedImage !== null 
-    ? placeholderImages.find(img => img.id === selectedImage) 
+  // Add intersection observer for fade-in animation
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Store current refs in a variable to use in cleanup
+    const currentRefs = galleryRefs.current;
+
+    currentRefs.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      currentRefs.forEach(ref => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
+  const selectedImageData = selectedImage !== null
+    ? galleryImages.find(img => img.id === selectedImage)
     : null;
 
   return (
     <section className="photo-gallery" id="photo-gallery">
       <h2 className="section-title">Photo Gallery</h2>
       <div className="gallery-grid">
-        {placeholderImages.map((image) => (
-          <div key={image.id} className="gallery-item" onClick={() => openLightbox(image.id)}>
-            <img src={image.src} alt={image.alt} />
+        {galleryImages.map((image, index) => (
+          <div
+            key={image.id}
+            className="gallery-item"
+            ref={el => {
+              galleryRefs.current[index] = el;
+              return undefined;
+            }}
+            onClick={() => openLightbox(image.id)}
+          >
+            <div className="gallery-content-wrapper">
+              <div className="image-container">
+                <img src={image.src} alt={image.alt} />
+              </div>
+            </div>
           </div>
         ))}
       </div>
