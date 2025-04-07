@@ -7,6 +7,7 @@ import PhotoGallery from './components/PhotoGallery';
 import RSVP from './components/RSVP';
 import GiftSection from './components/GiftSection';
 import CountdownTimer from './components/CountdownTimer';
+import MarquesSection from './components/MarquesSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <RSVP />
       <GiftSection />
       <CountdownTimer />
+      <MarquesSection />
       <Footer />
     </div>
   );
