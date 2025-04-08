@@ -60,7 +60,7 @@ const MarquesSection: React.FC = () => {
               have helped millions make informed decisions about technology.
             </p>
             <p className="marques-quote">
-              "The hate android phones, especially the pixel ones."
+              "I hate android phones, especially the pixel ones."
             </p>
           </div>
         </div>
