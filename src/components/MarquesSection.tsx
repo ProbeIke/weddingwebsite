@@ -60,7 +60,7 @@ const MarquesSection: React.FC = () => {
               have helped millions make informed decisions about technology.
             </p>
             <p className="marques-quote">
-              "The best tech is the tech that gets out of your way."
+              "The hate android phones, especially the pixel ones."
             </p>
           </div>
         </div>
